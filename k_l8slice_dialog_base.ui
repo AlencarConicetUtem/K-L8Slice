@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IndiceNDWIDialogBase</class>
+ <widget class="QDialog" name="IndiceNDWIDialogBase">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>960</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>960</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>K-L8Slice</string>
+  </property>
+  <widget class="QLabel" name="label_74">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>921</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color :#919191; color : white</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>Corrección atmosférica (Radiancia y reflectancia TOA)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_75">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>921</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : #919191; color : white</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>Guardar resultados </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_37">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>921</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60000</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : #919191; color : white</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>Entrada de datos sin procesar </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_inst">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>10</y>
+     <width>181</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>¿Cómo usar el complemento?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="msj_MTL">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>229</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>229</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select MTL file (if not in Landsat directory)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>Seleccionar archivo MTL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cuadroMTL">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>120</y>
+     <width>661</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="msj_TIF">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>229</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>229</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>Seleccionar imágenes Landsat 8 </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cuadroTIF">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>80</y>
+     <width>661</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="msj_CORR">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>252</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>229</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>Seleccionar imágenes corregidas Landsat 8 </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cuadroBandasCorregidas">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>220</y>
+     <width>601</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cuadroGuardar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>410</y>
+     <width>881</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_ejecutar">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>480</y>
+     <width>111</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Ejecutar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cerrar">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>480</y>
+     <width>111</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="aviso_ejecutar">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>450</y>
+     <width>564</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>⚠️AVISO: El botón “Ejecutar” se activará solo cuando ingrese los datos solicitados correctamente.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>921</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : #919191; color : white</string>
+   </property>
+   <property name="text">
+    <string> Cálculo k-means </string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="btn_metodo_0">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>261</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Iterative Minimum Distance (Forgy 1965)</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="btn_metodo_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hill-Climbing (Rubin 1967)</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="btn_metodo_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>350</y>
+     <width>261</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Combined Minimum Distance/Hillclimbing</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="btn_correccion">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Corrección realizada </string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_abrirTIF">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>80</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../../../../OneDrive/Escritorio/PLUGINS/NDWI/2.0/indice_ndwi/assets/icons/imag_bruto.svg</normaloff>../../../../../../../../../OneDrive/Escritorio/PLUGINS/NDWI/2.0/indice_ndwi/assets/icons/imag_bruto.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_abrirMTL">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>120</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../../../../OneDrive/Escritorio/PLUGINS/NDWI/2.0/indice_ndwi/assets/icons/MTL.svg</normaloff>../../../../../../../../../OneDrive/Escritorio/PLUGINS/NDWI/2.0/indice_ndwi/assets/icons/MTL.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_guardar">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>410</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../../../../OneDrive/Escritorio/PLUGINS/NDWI/2.0/indice_ndwi/assets/icons/guardar.svg</normaloff>../../../../../../../../../OneDrive/Escritorio/PLUGINS/NDWI/2.0/indice_ndwi/assets/icons/guardar.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_abrirCORR">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>220</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../../../../OneDrive/Escritorio/PLUGINS/NDWI/2.0/indice_ndwi/assets/icons/imag_bruto.svg</normaloff>../../../../../../../../../OneDrive/Escritorio/PLUGINS/NDWI/2.0/indice_ndwi/assets/icons/imag_bruto.svg</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=K-L8Slice
+qgisMinimumVersion=3.0
+description= Este nombre combina el algoritmo k-means que se utiliza para el agrupamiento (K) con "Landsat 8", que es el tipo específico de imágenes satelitales utilizadas, y "Slicer", que hace referencia al proceso de segmentación o corte de la imagen en diferentes clusters o grupos de uso del suelo.
+version=1.0
+author=Keyla Alencar da Silva, Francisca Ruiz-Tagle, Erik Zimmemann y Maria Carolina Parodi. CONICET, UTEM y UNR
+email=lab.suelos@utem.cl
+
+about=El plugin desarrollado es una extensión basada en el algoritmo k-means, un método de agrupamiento ampliamente utilizado en análisis de datos. Este algoritmo se aplica para clasificar imágenes satelitales Landsat 8 con el propósito de realizar clasificaciones no supervisadas del uso del suelo. El algoritmo k-means se encarga de dividir el conjunto de datos, que en este caso son las imágenes satelitales, en k grupos o clusters. El objetivo es agrupar los datos de tal manera que los puntos dentro del mismo clúster sean más similares entre sí en términos de características relacionadas con el uso del suelo, mientras que los puntos en otros clusters presenten diferencias significativas. El proceso de agrupamiento se realiza mediante la asignación iterativa de cada punto de la imagen a un clúster, basándose en la similitud de sus atributos espectrales y espaciales. Esto permite obtener una segmentación en diferentes categorías de uso del suelo, como áreas urbanas, agrícolas, bosques, cuerpos de agua, entre otras. La utilización de este plugin proporciona una forma eficiente y automática de realizar clasificaciones no supervisadas del uso del suelo en imágenes satelitales Landsat 8, lo que facilita el análisis y la toma de decisiones en estudios de gestión del territorio, planificación urbana, monitoreo ambiental y otras aplicaciones relacionadas con el uso del suelo. El plugin K-L8Slice es una extensión diseñada para realizar clasificaciones no supervisadas del uso del suelo en imágenes satelitales Landsat 8. Utilizando el algoritmo k-means, este plugin se encarga de dividir el conjunto de datos de las imágenes en k grupos o clusters, donde los puntos dentro del mismo clúster presentan similitudes espectrales y espaciales relacionadas con su uso del suelo. K-L8Slice permite una segmentación eficiente de las imágenes, agrupando áreas urbanas, agrícolas, bosques, cuerpos de agua y otras categorías de uso del suelo. La clasificación no supervisada automatizada facilita el análisis y la toma de decisiones en estudios de gestión del territorio, planificación urbana, monitoreo ambiental y diversas aplicaciones que requieran información detallada sobre la distribución del uso del suelo en una región específica, aprovechando la información rica y precisa de las imágenes satelitales Landsat 8.
+
+tracker=https://github.com/AlencarConicetUtem/K-L8Slice/issues
+repository=https://github.com/AlencarConicetUtem/K-L8Slice
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python
+
+homepage=https://www.linkedin.com/in/keyla-alencar-da-silva-b05a67142
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
